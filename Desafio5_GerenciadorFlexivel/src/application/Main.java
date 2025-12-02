@@ -41,6 +41,9 @@ public class Main {
     }
 
     public static void processaFormaFlexivel(List<? extends Book> itens_Processar) {
+        //Aqui  acima, a declaração do tipo de entrada tem de ser extends - acessa mas não adiciona;
+        //se quisessemos adicionar seria super, que adiciona mas não pode dar get
+
         System.out.println("Processando lista usando '? extends Book':");
         for (Book item : itens_Processar) {
             // Podemos obter itens da lista e tratá-los como ItemBiblioteca
